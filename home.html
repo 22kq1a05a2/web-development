@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>
+UI pages
+</title>
+<style>
+    #top-header{
+       
+       display: flex;
+         flex-direction: row;
+         top: 0;
+         left: 0;
+         width: 100%;
+         padding: 5px;
+         margin: 0 auto;
+         justify-content: space-between;
+ }
+ 
+ .top-nav {
+    overflow: hidden;
+    top: 0;
+  width: 100%; 
+   height: 70px;
+     
+ }
+ 
+ .topnav a {
+     float: right;
+     color: #fafdff;
+ }
+ 
+ .topnav a.active {
+     background-color: #ffffff;
+ }
+ 
+ .main {
+     margin-top: 30px; 
+ }
+ 
+.logo {
+     display: block;
+     width: 20vw;
+     height: 10vh;
+ }.box{
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 20%;
+       
+       } 
+  body {
+      background: url(ibg1.jpg);
+      background-color: rgb(0, 0, 0);
+  color: rgb(255, 249, 249);
+ 
+}
+  /*smart phone*/
+  @media screen and (min-width:550px){
+      body{
+        background: url(for2.webp);  
+        background-color: rgb(181, 9, 81);
+          color: rgb(255, 255, 255);
+          background-size: cover;
+      }
+  }
+  /*tablet and ipad*/
+  @media screen and (min-width:768px) and (max-width:1024px){
+      body{
+          background: url(for2.webp);
+          background-color: rgb(33, 209, 27);
+          color: rgb(255, 255, 255);
+          background-size: cover;
+      }}
+      /*labtab and desktop*/
+      @media screen and (min-width:1224px){
+      body{
+          background: url(for2.webp);
+          background-color: rgb(224, 221, 15);
+          color: rgb(255, 255, 255);
+          background-size: cover;
+      }}
+      /* Larfge screen*/
+      @media screen and (min-width:1824px){
+      body{
+          
+          background: url(for2.webp);
+          background-color: rgb(211, 11, 11);
+          color: rgb(253, 253, 253);
+     
+      }}
+      nav{
+             color: rgb(219, 49, 49);
+             padding: 10px;
+
+         }
+         nav ul{
+             list-style-type:none;
+             margin: 0;
+             padding: 0;
+         }
+         nav ul li{
+             display: inline;
+             margin-right: 20px;
+         }
+         nav ul li a{
+             color: rgb(255, 247, 247);
+             text-decoration:underline;
+         }
+         .container{
+           background-color: rgb(224, 61, 61);
+           color: rgb(255, 255, 255);
+           background-size: cover;
+         }
+   </style>
+    <script>
+      // User Validations
+function loginValidation() {
+          // Ramesh
+var uname = document.myform.username.value;
+           //Ramesh@123
+/*var password = document.myform.password.value;*/
+          if(uname==null || uname=="") {
+            alert("Name cant be blank")
+            return false;  
+         } /*else if (password.length<6){
+            alert("Password Must be 6 letters")
+            return false;
+         }  */
+         return true                 
+      }           
+   </script>
+</head>
+<body>
+    <header id="top-header">
+        <img src="form logo.jpg"class="img-rounded" alt="There is No Image" width="100" height="100"><br>
+          <br>
+        <nav class="top-nav">
+          
+          <ul> 
+            <h1>
+                 <li>
+              <a href="Home.html">Home</a> </li>
+               <li><a href="About.html">About</a></li>
+               <li><a href="forming.html">Farming</a></li>
+             
+              <li><a href="Quotes.html">Quotes</li>  
+            <li><a href="Tools.html">Technical Tools</a></li> 
+          
+            <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </h1>
+            </nav>
+          </header>
+          <center>  <div class="box">
+            <form name="myform" action="loginform.html" 	onsubmit="return loginValidation(this)">
+<h3>register form:</h3>
+User Name:<br>
+<input type="text" name="Uname"autofocus><br>
+Gender:<br>
+<input type="text" name="gender"><br>
+Email:<br>
+<input type ="text" aname="email"><br>
+Country:<br>
+<input type="text" name="Lid"placeholder="India"><br>
+<br><input type="submit"><br>
+</form>
+          </div><br>
+</body>
+</html>
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive Cards</title> 
+     <style>
+  /*for logo*/
+    #top-header{
+       
+      display: flex;
+        flex-direction: row;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+        justify-content: space-between;
+}
+
+.top-nav {
+   overflow: hidden;
+   top: 0;
+ width: 100%; 
+  height: 70px;
+    
+}
+
+.topnav a {
+    float: right;
+    color: #fafdff;
+}
+
+.topnav a.active {
+    background-color: #ffffff;
+}
+
+.main {
+    margin-top: 30px; 
+}
+
+.logo {
+    display: block;
+    width: 20vw;
+    height: 10vh;
+}
+/*for body*/    
+body {
+        font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+          
+          align-items: center;
+
+            background-color: #fffdfd;
+        background-image: url(green.jpg);
+        background-size: cover;
+        color: rgb(255, 255, 255); 
+        font-style: italic; 
+        } 
+        /*using media queries 
+        /*smart phone*/
+            @media screen and (min-width:550px){
+                body{
+                    background: url(1.jpg);
+                    background-size: cover;background-color: rgb(181, 9, 81);
+                    color: rgb(255, 246, 246);
+               
+                }
+            }
+            /*tablet and ipad*/
+            @media screen and (min-width:768px) and (max-width:1024px){
+                body{
+                  background: url(1.jpg);
+                    background-size: cover; background-color: rgb(33, 209, 27);
+                    color: rgb(255, 255, 255);
+               
+                }}
+                /*labtab and desktop*/
+                @media screen and (min-width:1224px){
+                body{
+                  background: url(1.jpg);
+                    background-size: cover; background-color: rgb(224, 221, 15);
+                    color: rgb(255, 254, 254);
+               
+                }}
+                /* Larfge screen*/
+                @media screen and (min-width:1824px){
+                body{
+                    
+                  background: url(1.jpg);
+                    background-size: cover;background-color: rgb(211, 11, 11);
+                    color: rgb(255, 255, 255);
+               
+                }}
+    
+/*for nav bar*/
+                nav{
+             /*background-color: #ffffff;*/
+             color: rgb(219, 49, 49);
+             padding: 10px;
+
+         }
+         nav ul{
+             list-style-type:none;
+             margin: 0;
+             padding: 0;
+         }
+         nav ul li{
+             display: inline;
+             margin-right: 20px;
+         }
+         nav ul li a{
+             color: rgb(255, 255, 255);
+             text-decoration:underline;
+         }
+        
+            
+</style>
+</head>
+
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body> 
+  <header id="top-header">
+<img src="form logo.jpg"class="img-rounded" alt="There is No Image" width="100" height="100"><br>
+  <br>
+<nav class="top-nav">
+  
+  <ul> 
+    <h1>
+         <li>
+      <a href="Home.html">Home</a> </li>
+       <li><a href="About.html">About</a></li>
+       <li><a href="forming.html">Farming</a></li>
+      
+      <li><a href="Quotes.html">Quotes</li>  
+    <li><a href="Tools.html">Technical Tools</a></li> 
+     
+    <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </h1>
+    </nav>
+  </header>
+  </div>
+
+  </body>
+</html>
